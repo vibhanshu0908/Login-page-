@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page with input validation and password hashing</title>
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>    
+<Section class="container">
+    <div class="form">
+        <main>Login</main>
+
+        <form action="/" onsubmit="return validateFrom()">
+          <div class="field input-field">
+            <input type="text" id="username" placeholder="username" required>
+            </div>
+            <p id="userError" class="error"></p>
+  
+            <div class="field input-field">
+              <input type="password" id="password" placeholder="password" required >
+            </div>
+            <p id="passError" class="error"></p>
+  
+              <div class="field button-field">
+                <button>Submit</button>
+              </div>
+              </form>
+    </div>
+    </Section>
+    <script src="./app.js"></script>
+</body>
+</html>
